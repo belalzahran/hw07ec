@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/bz/Desktop/HW/hw7ec/ManageInventory.cpp
-ManageInventory.h
-/Users/bz/Desktop/HW/hw7ec/ManageInventory.h
-
 /Users/bz/Desktop/HW/hw7ec/ManageInventory.h
 iostream
 -
+iomanip
+-
+
+/Users/bz/Desktop/HW/hw7ec/hw7ec.cpp
+iostream
+-
+ManageInventory.h
+/Users/bz/Desktop/HW/hw7ec/ManageInventory.h
 

@@ -22,7 +22,7 @@ ManageInventory::~ManageInventory()
     // looping through array to delete items
     for (int i = 0; i < count; i++)
     {
-        delete [] p__pInventoryItems[i];
+        delete p__pInventoryItems[i];
     }
     // deleting array
     delete [] p__pInventoryItems;
@@ -34,6 +34,7 @@ ManageInventory::~ManageInventory()
 // method to add items to the array of items
 void ManageInventory::addItem(string name, int quantity, float cost)
 {
+
     // create new pointer
     Item *x = new Item;
 
@@ -44,19 +45,25 @@ void ManageInventory::addItem(string name, int quantity, float cost)
 
     // insert and increment count
     p__pInventoryItems[count] = x;
+
     count++;
 }
 
 // method to print out inventory
 void ManageInventory::PrintInventory() const
 {
+    cout << left;
+
+    cout << "Item        # left   Price\n";
+    cout <<"----------- ------- -------\n";
     // loop through list
     for (int i = 0; i < count; i++)
     {
         // output values
-        cout << p__pInventoryItems[i]->name << endl;
-        cout << p__pInventoryItems[i]->quantity << endl;
-        cout << p__pInventoryItems[i]->cost << endl;
+        cout << setw(14) << p__pInventoryItems[i]->name;
+        cout << setw(6) << p__pInventoryItems[i]->quantity;
+        cout << "$" << p__pInventoryItems[i]->cost << endl;
     }
 
+    cout << right;
 }

@@ -27,16 +27,20 @@ int main()
 
 
     // intitialize inventory
-    ManageInventory bob{2};
+    ManageInventory myFirstInventory{5};
 
 
     // add items
-    bob.addItem("Shoes", 30, 20.99);
-    bob.addItem("Sunglasses", 25, 19.99);
+    myFirstInventory.addItem("Shoes", 33, 20.99);
+    myFirstInventory.addItem("Sunglasses", 23, 19.99);
+    myFirstInventory.addItem("Hats", 124, 10.99);
+    myFirstInventory.addItem("Umbrellas", 14, 19.99);
+    myFirstInventory.addItem("Jackets", 23, 59.99);
+
 
 
     // print inventory
-    bob.PrintInventory();
+    myFirstInventory.PrintInventory();
 
 
 
