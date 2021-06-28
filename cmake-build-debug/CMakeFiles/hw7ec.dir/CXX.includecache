@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bz/Desktop/HW/hw7ec/ManageInventory.cpp
+ManageInventory.h
+/Users/bz/Desktop/HW/hw7ec/ManageInventory.h
+
+/Users/bz/Desktop/HW/hw7ec/ManageInventory.h
+iostream
+-
+
