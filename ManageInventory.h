@@ -6,6 +6,8 @@ using namespace std;
 #ifndef HW7EC_MANAGEINVENTORY_H
 #define HW7EC_MANAGEINVENTORY_H
 
+
+
 struct Item{
     string name;
     int quantity;

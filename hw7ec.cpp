@@ -13,11 +13,10 @@ using namespace std;
 /*******************************************************************************
 * hw07ec - Dynamic Memory
 *-------------------------------------------------------------------------------
-* This program
+* This program is practice on dynamic memory allocation and deallocation for hw7
 *-------------------------------------------------------------------------------*/
 int main()
 {
-
 
     cout << "*****************************************\n";
     cout << "   Programmed by: Belal Zahran\n";
@@ -26,14 +25,17 @@ int main()
     cout << "   HW #7ec      : Dynamic Memory \n";
     cout << "*****************************************\n\n";
 
+
+    // intitialize inventory
     ManageInventory bob{2};
 
 
+    // add items
     bob.addItem("Shoes", 30, 20.99);
     bob.addItem("Sunglasses", 25, 19.99);
 
 
-
+    // print inventory
     bob.PrintInventory();
 
 
